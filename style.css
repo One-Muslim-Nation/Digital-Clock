@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(135deg, #8052ec, #d161ff);
+}
+
+h1 {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.clock {
+    width: 31.25em;
+    height: 8em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.clock div {
+    position: relative;
+    background-color: #ffffff;
+    height: 100%;
+    width: 3.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    color: #150c41;
+    border-radius: 1.9em;
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.05em;
+    background-color: gainsboro;
+}
+
+.clock span {
+    font-weight: 800;
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 45px;
+        margin-top: 40px;
+    }
+
+    .clock {
+        width: 24em;
+        height: 6.5em;
+    }
+
+    .clock div {
+        width: 2.5em;
+        font-size: 2em;
+    }
+
+    .clock span {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .clock {
+        width: 18em;
+        height: 5em;
+    }
+
+    .clock div {
+        width: 2em;
+        font-size: 1.5em;
+    }
+
+    .clock span {
+        font-size: 1.5em;
+    }
+}
